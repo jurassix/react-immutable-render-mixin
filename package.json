@@ -1,6 +1,6 @@
 {
   "name": "react-immutable-render-mixin",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "React PureRenderMixin replacement for immutable-js library",
   "homepage": "http://github.com/jurassix/react-immutable-render-mixin",
   "scripts": {},
