@@ -1,0 +1,18 @@
+{
+  "name": "react-immutable-render-mixin",
+  "version": "0.0.1",
+  "description": "react pure render mixin for immutabile-js library",
+  "scripts": {
+  },
+  "keywords": [
+    "react",
+    "immutable-js",
+    "immutability"
+  ],
+  "main": "./ImmutableRenderMixin.js",
+  "author": "clint ayres",
+  "license": "MIT",
+  "dependencies": {
+    "immutable": "^2.0.17"
+  }
+}
