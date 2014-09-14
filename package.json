@@ -2,6 +2,7 @@
   "name": "react-immutable-render-mixin",
   "version": "0.2.0",
   "description": "react pure render mixin for immutabile-js library",
+  "homepage": "http://github.com/jurassix/react-immutable-render-mixin",
   "scripts": {},
   "keywords": [
     "react",
