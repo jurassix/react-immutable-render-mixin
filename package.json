@@ -1,6 +1,6 @@
 {
   "name": "react-immutable-render-mixin",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "react pure render mixin for immutabile-js library",
   "scripts": {},
   "keywords": [
