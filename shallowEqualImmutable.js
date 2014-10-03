@@ -1,4 +1,4 @@
-var Immutable = require('Immutable');
+var Immutable = require('immutable');
 
 function shallowEqualImmutable(objA, objB) {
   if (Immutable.is(objA, objB)) {
