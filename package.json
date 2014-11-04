@@ -8,7 +8,8 @@
     "react",
     "mixin",
     "immutable-js",
-    "immutability"
+    "immutability",
+    "react-component"
   ],
   "main": "./ImmutableRenderMixin.js",
   "author": "clint ayres",
