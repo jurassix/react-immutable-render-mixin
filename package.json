@@ -2,7 +2,7 @@
   "name": "react-immutable-render-mixin",
   "version": "0.6.1",
   "description": "React PureRenderMixin replacement for immutable-js library",
-  "homepage": "http://github.com/jurassix/react-immutable-render-mixin",
+  "homepage": "http://github.com/jurassix/react-immutable-render-mixin.git/",
   "scripts": {},
   "keywords": [
     "react",
@@ -19,6 +19,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://jurassix@github.com/jurassix/react-immutable-render-mixin.git/"
+    "url": "https://github.com/jurassix/react-immutable-render-mixin.git/"
   }
 }

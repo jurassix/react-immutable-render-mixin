@@ -1,0 +1,73 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.33
+4 verbose publish [ '.' ]
+5 verbose cache add [ '.', null ]
+6 verbose cache add name=undefined spec="." args=[".",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: '.',
+7 verbose parsed url   path: '.',
+7 verbose parsed url   href: '.' }
+8 silly lockFile 3a52ce78- .
+9 verbose lock . /Users/cayres/.npm/3a52ce78-.lock
+10 verbose tar pack [ '/Users/cayres/.npm/react-immutable-render-mixin/0.6.1/package.tgz',
+10 verbose tar pack   '.' ]
+11 verbose tarball /Users/cayres/.npm/react-immutable-render-mixin/0.6.1/package.tgz
+12 verbose folder .
+13 info prepublish react-immutable-render-mixin@0.6.1
+14 silly lockFile 1f1177db-tar tar://.
+15 verbose lock tar://. /Users/cayres/.npm/1f1177db-tar.lock
+16 silly lockFile cb41889f-e-render-mixin-0-6-1-package-tgz tar:///Users/cayres/.npm/react-immutable-render-mixin/0.6.1/package.tgz
+17 verbose lock tar:///Users/cayres/.npm/react-immutable-render-mixin/0.6.1/package.tgz /Users/cayres/.npm/cb41889f-e-render-mixin-0-6-1-package-tgz.lock
+18 silly lockFile 1f1177db-tar tar://.
+19 silly lockFile 1f1177db-tar tar://.
+20 silly lockFile cb41889f-e-render-mixin-0-6-1-package-tgz tar:///Users/cayres/.npm/react-immutable-render-mixin/0.6.1/package.tgz
+21 silly lockFile cb41889f-e-render-mixin-0-6-1-package-tgz tar:///Users/cayres/.npm/react-immutable-render-mixin/0.6.1/package.tgz
+22 silly lockFile b097e356-table-render-mixin-0-6-1-package /Users/cayres/.npm/react-immutable-render-mixin/0.6.1/package
+23 verbose lock /Users/cayres/.npm/react-immutable-render-mixin/0.6.1/package /Users/cayres/.npm/b097e356-table-render-mixin-0-6-1-package.lock
+24 silly lockFile b097e356-table-render-mixin-0-6-1-package /Users/cayres/.npm/react-immutable-render-mixin/0.6.1/package
+25 silly lockFile b097e356-table-render-mixin-0-6-1-package /Users/cayres/.npm/react-immutable-render-mixin/0.6.1/package
+26 silly lockFile 3a52ce78- .
+27 silly lockFile 3a52ce78- .
+28 silly publish { name: 'react-immutable-render-mixin',
+28 silly publish   version: '0.6.1',
+28 silly publish   description: 'React PureRenderMixin replacement for immutable-js library',
+28 silly publish   homepage: 'http://github.com/jurassix/react-immutable-render-mixin',
+28 silly publish   scripts: {},
+28 silly publish   keywords:
+28 silly publish    [ 'react',
+28 silly publish      'mixin',
+28 silly publish      'immutable-js',
+28 silly publish      'immutability',
+28 silly publish      'react-component' ],
+28 silly publish   main: './ImmutableRenderMixin.js',
+28 silly publish   author: { name: 'clint ayres' },
+28 silly publish   license: 'MIT',
+28 silly publish   dependencies: { immutable: '^3.0.2' },
+28 silly publish   repository:
+28 silly publish    { type: 'git',
+28 silly publish      url: 'https://jurassix@github.com/jurassix/react-immutable-render-mixin.git/' },
+28 silly publish   readme: 'react-immutable-render-mixin\n============================\n\nThis mixin replaces the [PureRenderMixin](http://facebook.github.io/react/docs/pure-render-mixin.html) when using [facebook/immutable-js](https://github.com/facebook/immutable-js) library with [React](https://github.com/facebook/react)\n\nThis mixin implements shouldComponentUpdate method using prop and state equality with Immutable.is().\n\n    var ImmutableRenderMixin = require(\'react-immutable-render-mixin\')\n    React.createClass({\n      mixins: [ImmutableRenderMixin],\n\n      render: function() {\n        return <div className={this.props.className}>foo</div>;\n      }\n    });\n',
+28 silly publish   readmeFilename: 'README.md',
+28 silly publish   gitHead: 'a71e241c176b9ecd52fb9c187255b1507ee78a39',
+28 silly publish   _id: 'react-immutable-render-mixin@0.6.1',
+28 silly publish   _shasum: 'fdada6838860dc89f30ad0ba739d493fed33ce06',
+28 silly publish   _from: '.' }
+29 error need auth auth and email required for publishing
+29 error need auth You need to authorize this machine using `npm adduser`
+30 error System Darwin 12.5.0
+31 error command "node" "/usr/local/bin/npm" "publish"
+32 error cwd /Users/cayres/projects/react-immutable-render-mixin
+33 error node -v v0.10.33
+34 error npm -v 1.4.28
+35 error code ENEEDAUTH
+36 verbose exit [ 1, true ]
