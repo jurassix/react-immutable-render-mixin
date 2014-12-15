@@ -16,7 +16,7 @@
   "author": "clint ayres",
   "license": "MIT",
   "peerDependencies": {
-    "immutable": "^3.0.0"
+    "immutable": ">=2.0.10"
   },
   "repository": {
     "type": "git",
