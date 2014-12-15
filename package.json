@@ -15,7 +15,7 @@
   "main": "./ImmutableRenderMixin.js",
   "author": "clint ayres",
   "license": "MIT",
-  "dependencies": {
+  "peerDependencies": {
     "immutable": "^3.3.0"
   },
   "repository": {
