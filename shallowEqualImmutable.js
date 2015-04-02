@@ -17,19 +17,14 @@ function shallowEqualImmutable(objA, objB) {
   }
   
   // Test for A's keys different from B.
-  for(var aIndex = 0; aIndex < keysAlength; aIndex++) {
-    if (!objB.hasOwnProperty(keysA[aIndex]) || !is(objA[keysA[aIndex]], objB[keysA[aIndex]]) ) {
+  for(var i = 0; i < keysAlength; i++) {
+    if (!objB.hasOwnProperty(keysA[i]) || !is(objA[keysA[i]], objB[keysA[i]]) ) {
       return false;
     }
   }
   
-  // Test for B's keys missing from A.
-  for(var bIndex = 0; bIndex < keysBlength; i++) {
-    if(!keysA.hasOwnProperty(keysB[bIndex]) {
-      return false;
-    }
-  }
-  
+  // Now we dont need to test for B's keys missing from A,
+  // because if length's is same and prev check success - objB hasn't more keys
   return true;
 }
 
