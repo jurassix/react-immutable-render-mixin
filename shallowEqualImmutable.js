@@ -1,30 +1,32 @@
 var Immutable = require('immutable');
 
-var is = Immutable.is.bind(Immutable),
-    getKeys = Object.keys.bind(Object);
+var is = Immutable.is.bind(Immutable);
 
 function shallowEqualImmutable(objA, objB) {
-  if (is(objA, objB)) {
+  if (objA === objB || is(objA, objB)) {
     return true;
   }
-  var keysA = getKeys(objA),
-      keysB = getKeys(objB),
-      keysAlength = keysA.length,
-      keysBlength = keysB.length
-      
-  if(keysAlength !== keysBlength) {
+
+  if (typeof objA !== 'object' || objA === null ||
+      typeof objB !== 'object' || objB === null) {
     return false;
   }
   
+  var keysA = Object.keys(objA);
+  var keysB = Object.keys(objB);
+
+  if (keysA.length !== keysB.length) {
+    return false;
+  }
+
   // Test for A's keys different from B.
-  for(var i = 0; i < keysAlength; i++) {
-    if (!objB.hasOwnProperty(keysA[i]) || !is(objA[keysA[i]], objB[keysA[i]]) ) {
+  var bHasOwnProperty = Object.prototype.hasOwnProperty.bind(objB);
+  for (var i = 0; i < keysA.length; i++) {
+    if (!bHasOwnProperty(keysA[i]) || !is(objA[keysA[i]], objB[keysA[i]])) {
       return false;
     }
   }
-  
-  // Now we dont need to test for B's keys missing from A,
-  // because if length's is same and prev check success - objB hasn't more keys
+
   return true;
 }
 
