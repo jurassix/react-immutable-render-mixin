@@ -12,7 +12,6 @@
     "immutability",
     "react-component"
   ],
-  "main": "./ImmutableRenderMixin.js",
   "author": "clint ayres",
   "license": "MIT",
   "peerDependencies": {
