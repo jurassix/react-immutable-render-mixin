@@ -17,5 +17,17 @@ describe('ImmutableRenderMixin', () => {
     it('should expose shallowEqual function on export', () => {
       expect(shallowEqualImmutable).to.deep.equal(shallowEqual);
     });
+    it('should expose mixin as default for <= ES5', () => {
+      const indexDefault = require('../index').default;
+      expect(immutableRenderMixin).to.deep.equal(indexDefault);
+    });
+    it('should expose decorator on export for <= ES5', () => {
+      const indexDecorator = require('../index').immutableRenderDecorator;
+      expect(immutableRenderDecorator).to.deep.equal(indexDecorator);
+    });
+    it('should expose shallowEqual function  for <= ES5', () => {
+      const indexShallowEqual = require('../index').shallowEqualImmutable;
+      expect(shallowEqualImmutable).to.deep.equal(indexShallowEqual);
+    });
   });
 });
