@@ -1,8 +1,8 @@
-var Immutable = require('immutable');
+import Immutable from 'immutable';
 
-var is = Immutable.is.bind(Immutable);
+const is = Immutable.is.bind(Immutable);
 
-function shallowEqualImmutable(objA, objB) {
+export default function shallowEqualImmutable(objA, objB) {
   if (objA === objB || is(objA, objB)) {
     return true;
   }
@@ -11,17 +11,17 @@ function shallowEqualImmutable(objA, objB) {
       typeof objB !== 'object' || objB === null) {
     return false;
   }
-  
-  var keysA = Object.keys(objA);
-  var keysB = Object.keys(objB);
+
+  const keysA = Object.keys(objA);
+  const keysB = Object.keys(objB);
 
   if (keysA.length !== keysB.length) {
     return false;
   }
 
   // Test for A's keys different from B.
-  var bHasOwnProperty = Object.prototype.hasOwnProperty.bind(objB);
-  for (var i = 0; i < keysA.length; i++) {
+  const bHasOwnProperty = Object.prototype.hasOwnProperty.bind(objB);
+  for (let i = 0; i < keysA.length; i++) {
     if (!bHasOwnProperty(keysA[i]) || !is(objA[keysA[i]], objB[keysA[i]])) {
       return false;
     }
@@ -29,5 +29,3 @@ function shallowEqualImmutable(objA, objB) {
 
   return true;
 }
-
-module.exports = shallowEqualImmutable;
