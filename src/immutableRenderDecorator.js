@@ -7,4 +7,5 @@ import shouldComponentUpdate from './shouldComponentUpdate';
  */
 export default function immutableRenderDecorator(component) {
   component.prototype.shouldComponentUpdate = shouldComponentUpdate;
+  return component;
 }
