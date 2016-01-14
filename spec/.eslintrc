@@ -1,0 +1,5 @@
+{
+    "rules": {
+        "new-cap": [2, {"capIsNewExceptions": ["Immutable.List", "Immutable.Map", "Immutable.Set"]}]
+    }
+}
