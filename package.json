@@ -23,7 +23,8 @@
   "author": "clint ayres",
   "license": "MIT",
   "peerDependencies": {
-    "immutable": ">=2.0.10"
+    "immutable": ">=2.0.10",
+    "react": ">0.14.0"
   },
   "repository": {
     "type": "git",
@@ -37,6 +38,7 @@
     "eslint-config-airbnb": "^2.1.0",
     "mkdirp": "^0.5.1",
     "mocha": "^2.3.4",
+    "react": "^0.14.7",
     "rimraf": "^2.4.4"
   }
 }

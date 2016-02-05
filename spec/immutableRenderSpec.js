@@ -107,15 +107,16 @@ describe('shouldComponentUpdate', () => {
 });
 
 describe('immutableRenderDecorator', () => {
-  it('should add shouldComponentUpdate method to target component\'s prototype', () => {
-    class TestComponent {}
-    immutableRenderDecorator(TestComponent);
-    expect(TestComponent.prototype.shouldComponentUpdate).equal(shouldComponentUpdate);
-  });
-
   it('can behavior like a HoC', () => {
     class TestComponent {}
     const Enhanced = immutableRenderDecorator(TestComponent);
     expect(Enhanced.prototype.shouldComponentUpdate).equal(shouldComponentUpdate);
+  });
+
+  it('should accept functional components', () => {
+    const FunctionalComponent = () => null;
+    const DecoratedComponent = immutableRenderDecorator(FunctionalComponent);
+
+    expect(DecoratedComponent.prototype.shouldComponentUpdate).equal(shouldComponentUpdate);
   });
 });
