@@ -10,7 +10,8 @@
     "build:spec": "mkdirp lib/spec && babel spec -d lib/spec",
     "test": "npm run build && mocha --recursive lib/spec",
     "clean": "rimraf lib",
-    "lint": "eslint src && eslint spec"
+    "lint": "eslint src && eslint spec",
+    "prepublish": "npm run build"
   },
   "keywords": [
     "react",
