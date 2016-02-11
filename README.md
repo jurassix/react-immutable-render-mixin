@@ -5,6 +5,7 @@ This library exposes 3 distict options for immutable rendering:
 
 * Mixin for `React.createClass` support
 * HoC ( _decorator_ ) for `React.Component`
+* shouldComponentUpdate function used by the mixin
 * shallowEqualImmutable function to allow custom `shouldComponentUpdate` implementations
 
 This library when used as a mixin/decorator replaces the [PureRenderMixin](http://facebook.github.io/react/docs/pure-render-mixin.html) when using [facebook/immutable-js](https://github.com/facebook/immutable-js) library with [React](https://github.com/facebook/react)
