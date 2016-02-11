@@ -66,6 +66,25 @@ class Test extends React.Component {
 }
 ```
 
+Usage with default `shouldComponentUpdate`
+-----
+
+```js
+import React from 'react';
+import { shouldComponentUpdate } from 'react-immutable-render-mixin';
+
+class Test extends React.Component {
+  constructor(props) {
+    super(props);
+    this.shouldComponentUpdate = shouldComponentUpdate.bind(this);
+  }
+
+  render() {
+    return <div></div>;
+  }
+}
+```
+
 Usage with a custom `shouldComponentUpdate`
 -----
 
