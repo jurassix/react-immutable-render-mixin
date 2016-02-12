@@ -115,6 +115,8 @@ var immutableRenderMixin = require('react-immutable-render-mixin').default;
 var immutableRenderDecorator = require('react-immutable-render-mixin').immutableRenderDecorator;
 
 var shallowEqualImmutable = require('react-immutable-render-mixin').shallowEqualImmutable;
+
+var shouldComponentUpdate = require('react-immutable-render-mixin').shouldComponentUpdate;
 ```
 
 Full Example:
