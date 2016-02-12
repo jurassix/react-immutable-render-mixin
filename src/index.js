@@ -7,5 +7,5 @@ export {
   immutableRenderMixin as default,
   immutableRenderDecorator,
   shouldComponentUpdate,
-  shallowEqualImmutable
+  shallowEqualImmutable,
 };
