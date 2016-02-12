@@ -25,7 +25,7 @@
   "license": "MIT",
   "peerDependencies": {
     "immutable": ">=2.0.10",
-    "react": ""
+    "react": "*"
   },
   "repository": {
     "type": "git",
