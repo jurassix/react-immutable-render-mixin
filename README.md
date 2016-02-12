@@ -1,10 +1,11 @@
 react-immutable-render-mixin
 ============================
 
-This library exposes 3 distict options for immutable rendering:
+This library exposes 4 distinct options for immutable rendering:
 
 * Mixin for `React.createClass` support
 * HoC ( _decorator_ ) for `React.Component`
+* shouldComponentUpdate function used by the mixin and HoC
 * shallowEqualImmutable function to allow custom `shouldComponentUpdate` implementations
 
 This library when used as a mixin/decorator replaces the [PureRenderMixin](http://facebook.github.io/react/docs/pure-render-mixin.html) when using [facebook/immutable-js](https://github.com/facebook/immutable-js) library with [React](https://github.com/facebook/react)
@@ -66,6 +67,25 @@ class Test extends React.Component {
 }
 ```
 
+Usage with default `shouldComponentUpdate`
+-----
+
+```js
+import React from 'react';
+import { shouldComponentUpdate } from 'react-immutable-render-mixin';
+
+class Test extends React.Component {
+  constructor(props) {
+    super(props);
+    this.shouldComponentUpdate = shouldComponentUpdate.bind(this);
+  }
+
+  render() {
+    return <div></div>;
+  }
+}
+```
+
 Usage with a custom `shouldComponentUpdate`
 -----
 
@@ -95,6 +115,8 @@ var immutableRenderMixin = require('react-immutable-render-mixin').default;
 var immutableRenderDecorator = require('react-immutable-render-mixin').immutableRenderDecorator;
 
 var shallowEqualImmutable = require('react-immutable-render-mixin').shallowEqualImmutable;
+
+var shouldComponentUpdate = require('react-immutable-render-mixin').shouldComponentUpdate;
 ```
 
 Full Example:
