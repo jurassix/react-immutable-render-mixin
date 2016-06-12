@@ -1,6 +1,8 @@
 react-immutable-render-mixin
 ============================
 
+## Users are urged to use [PureRenderMixin](http://facebook.github.io/react/docs/pure-render-mixin.html) with [facebook/immutable-js](https://github.com/facebook/immutable-js). If performance is still an issue an examination of your usage of Immutable.js should be your first path towards a solution. This library was created from experimentations with Immutable that were ultimately erroneous; improper usage of Immutable.js :hankey:. Users should be able to achieve maximum performance simply using PureRenderMixin.
+
 This library exposes 4 distinct options for immutable rendering:
 
 * Mixin for `React.createClass` support
